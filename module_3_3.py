@@ -11,9 +11,9 @@ print_params()
 
 print(f'\n2.Распаковка параметров: ')
 values_list = (5, 'Телефон', False )
-print(values_list)
-values_dict = {1:19, 2:'Смартфон', 3:True}
-print_params(values_dict)
+print(*values_list)
+values_dict = {'a':19, 'b':'Смартфон', 'c':True}
+print_params(**values_dict)
 
 print(f'\n3.Распаковка + отдельные параметры: ')
 values_list_2 = [3.14, 'Alex']
