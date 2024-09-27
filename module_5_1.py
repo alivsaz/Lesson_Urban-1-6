@@ -1,6 +1,4 @@
 # Developer - не только разработчик
-from tkinter.font import names
-
 
 class House:
     def __init__(self, name, number_of_floors):
