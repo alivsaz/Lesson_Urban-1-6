@@ -2,11 +2,11 @@
 
 class House:
     __first = 0
-    def __new__(cls, args, kwargs):
+    def __new__(cls, *args, **kwargs):
         if cls.__first == 0:
             cls.houses_history = []
             cls.__first = 1
-        cls.houses_history.append(args)
+        cls.houses_history.append(args[0])
         return super().__new__(cls)
 
     def __del__(self):
